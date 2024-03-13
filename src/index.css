@@ -1,0 +1,2898 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.active {
+  color: #10BB87;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  height: 48px;
+  background-color: #F2F2F2;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #3333332f;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.navbar img {
+  position: fixed;
+  left: 8%;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(30, 30, 30);
+  margin: 5px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(11, 11, 11);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbarsearch {
+  display: flex;
+  position: fixed;
+  right: 8%;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbaruse {
+  padding: 8px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px 1px rgba(128, 128, 128, 0.576);
+}
+
+.navbaruse1 {
+  padding: 5px 7px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px 1px rgba(128, 128, 128, 0.576);
+}
+
+.navbarbutton {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-list a.selected {
+  background-color: #46A358;
+  color: white;
+}
+
+/* Modal oynani stilini belgilash */
+.modal,
+.modalll {
+  width: 500px;
+  height: 390px;
+  position: fixed;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.059);
+  z-index: 1;
+}
+
+.modall {
+  width: 500px;
+  height: 390px;
+  position: fixed;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Modal oynani yopish uchun stil */
+.modal-close,
+.modal-closee {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  cursor: pointer;
+  font-size: 25px;
+
+}
+
+.menunavlink {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding: 25px 30px 20px 30px;
+  overflow: scroll auto;
+  overflow-x: auto;
+
+}
+
+.menunavlink a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menusenter {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #33333357;
+  margin-top: 30px;
+}
+
+.navlinkpagrtowo {
+  height: 20px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s;
+  padding: 10px 10px;
+}
+
+.navlinkpagrtowo:hover {
+  background-color: #33333321;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #10BB87;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F2F2F2;
+  width: 1px;
+}
+
+.imagesenter img {
+  margin: 0 auto;
+}
+
+.searchicon {
+  color: #FFA630;
+  font-size: 40px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.059);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.searchiconslarone {
+  position: relative;
+  width: 390px;
+  text-transform: uppercase;
+  padding: 9px 10px 9px 20px;
+  bottom: 8px;
+  right: 25px;
+  border: none;
+  box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.132);
+  border-radius: 10px;
+}
+
+.senteramd {
+  height: 22px;
+}
+
+.homekontainer {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.homekontainer0auto {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.tepawith100 {
+  width: 100%;
+  height: 60vh;
+  background-image: url('./componentes//img/interactive.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.fodbolkacenter {
+  width: 490px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttomhome {
+  background-color: #10BB87;
+  font-size: 18px;
+  border: none;
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  box-shadow: 10px 9px 25px -4px #487b6cbb;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+p {
+  line-height: 20px;
+}
+
+.section1home {
+  width: 1020px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
+  background-color: white;
+  padding: 100px 0;
+  border-bottom: 1px solid #33333377;
+  overflow: hidden;
+}
+
+.section1home .section1home_box1 {
+  width: 370px;
+}
+
+span {
+  text-decoration: underline #FFA630;
+}
+
+.section2home {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section2home div {
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section2home div p {
+  color: #0000007c;
+}
+
+.section3home {
+  width: 100%;
+  margin: 0 auto;
+  margin: 100px 0;
+}
+
+.section3home img {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.slidercarusel {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 4%;
+  border-bottom: 1px solid #33333349;
+}
+
+figure {
+  width: 192px !important;
+  height: 192px;
+}
+
+figure img {
+  border-radius: 30px;
+  width: 192px !important;
+  height: 192px;
+}
+
+.card_container {
+  width: 192px;
+  overflow: hidden !important;
+  padding: 0 0 0 7px;
+  height: 330px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card_container h3 {
+  width: 192px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.btnshadovhome {
+  width: 170px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.btnshadovhome:hover {
+  background-color: #10BB87;
+  color: white;
+  box-shadow: 0px 9px 25px -4px #487B6C80;
+}
+
+.slick-next {
+  z-index: 1 !important;
+  background-color: #10BB87 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 10px !important;
+  box-shadow: 3px 5px 10px 2px silver !important;
+}
+
+.slick-next::before {
+  font-size: 30px !important;
+}
+
+.cardhover {
+  width: 60px;
+  position: relative;
+  bottom: 45px;
+  left: 20px;
+  z-index: 1;
+  background-color: #10BB87;
+  color: white;
+  padding: 3px 10px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.section4home {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.section4flex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+
+.section4flex div {
+  width: 200px;
+  height: 200px;
+}
+
+.section4flex div h3 {
+  margin-top: 10px;
+}
+
+.section4flex div p {
+  height: 65px;
+  margin: 10px 0 5px 0;
+  color: #B3B3B3;
+}
+
+.section5home {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.importrasimlar1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+.importrasimlar1 div {
+  width: 96px;
+  text-align: center;
+}
+
+.importrasimlar2 div {
+  text-align: center;
+  width: 96px;
+}
+
+.importrasimlar2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 96px;
+  margin-bottom: 10%;
+}
+
+.section6ome {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section6ome img {
+  width: 75%;
+}
+
+.section7home {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.section7flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 9%;
+}
+
+.section7flex div {
+  width: 45%;
+  border-top: 1px solid #33333350;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btnbackraundgreen {
+  width: 160px;
+  border: none;
+  color: #10BB87;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 1s;
+}
+
+.btnbackraundgreen:hover {
+  color: rgb(255, 255, 255);
+  background-color: #10BB87;
+}
+
+.section1foter {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.section1foterflex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 8%;
+}
+
+.section1foterflex .flexfoter {
+  width: 45%;
+}
+
+.section1foterflex .flexfoter .section1fotericon h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 0;
+  border-top: 1px solid #3333332f;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.section1fotericon p {
+  padding-bottom: 20px;
+}
+
+.section1fotericon h3:hover {
+  color: #10BB87;
+}
+
+.section2foter {
+  width: 1000px;
+  height: 300px;
+  background-color: #10BB87;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 35px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section2foter .section2foterinput {
+  width: 35%;
+  margin-top: 50px;
+}
+
+.section2foter .section2foterinput h1 {
+  margin: 0 0 30px 0;
+}
+
+.section2foter .section2foterinput input {
+  padding: 10px 20px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  margin-top: 5px;
+  display: inline-block !important;
+}
+
+.cardinfocontainer {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.cardinfo1 {
+  width: 670px;
+  height: 448px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardinfodagi2img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardinfodagi1img img {
+  width: 448px;
+  height: 448px;
+  border-radius: 10px
+}
+
+.cardinfodagi2img img {
+  width: 192px;
+  height: 192px;
+  border-radius: 10px
+}
+
+.cardinfo2 {
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shutik {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+:root {
+  --main-color: #000000;
+}
+
+.color-picker-input {
+  margin-right: 10px;
+  border: none;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.rangcolor {
+  border: none;
+  background-color: #10BB87;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.idvrain {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 5px 20px;
+  transition: all 0.5s;
+}
+
+.idvrain:hover .rain {
+  background-color: red;
+  color: white;
+  background-color: #10BB87;
+}
+
+.idvrain:hover {
+  color: #10BB87;
+}
+
+.rain {
+  font-size: 20px;
+  color: #10BB87;
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.bacraunditogo0 {
+  width: 184px;
+  height: 80px;
+  background-color: #10BB87;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.increment {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.increment h3 {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.indx1 {
+  background-color: white;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.indx1:hover {
+  background-color: #dfdfdf71;
+}
+
+.mn {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #10BB87;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 23px;
+  border-radius: 10px;
+  box-shadow: 0px 9px 25px -4px #487B6C80;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.mn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.section_1_katalog {
+  width: 76%;
+  position: relative;
+  left: 24%;
+  display: flex;
+  overflow: hidden;
+  gap: 8%;
+}
+
+.section_1_katalog .section1katalog_box1 {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section_1_katalog .section1katalog_box1 h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.katalogbtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.katalogbtn:hover {
+  color: white;
+  background-color: #10BB87;
+}
+
+.filterkatalog {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.filterkatalog .divfilter1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.katalogkontainer {
+  width: 1000px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.uslugicontainer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imgsohtacontainer {
+  width: 100%;
+}
+
+.imgsohtacontainer div {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.imgsohtacontainer div img {
+  width: 100%;
+}
+
+.uslugiflex {
+  width: 680px;
+  height: 220px;
+  display: flex;
+  position: relative;
+  left: 1px;
+  gap: 60px;
+}
+
+.uslugiflex2 {
+  width: 680px;
+  height: 220px;
+  display: flex;
+  position: relative;
+  left: 32%;
+  gap: 60px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.kattaflexuslugi {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 0 auto;
+}
+
+.aftarizatsiyaspan {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.aptarizatsiyacenter {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+
+.inputaftarizatsiya {
+  width: 220px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  padding: 0 0 0 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 7px 0px #00000026;
+
+}
+
+.pruducts {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.pagination {
+  width: 1000px;
+  margin: 0 auto;
+  list-style: none;
+
+}
+
+.pagination2 {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.page-item {
+  padding: 7px 10px;
+  background-color: white;
+  box-shadow: 0px 4px 7px 0px #00000026;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.page-item a {
+  color: #000000;
+}
+
+.page-itemm a {
+  position: relative;
+  top: 10px;
+  color: #000000;
+}
+
+.imagenavbar {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 1px !important;
+  display: inline !important;
+}
+
+#skrolauto {
+  height: 300px !important;
+  overflow: auto !important;
+  background-color: #10BB87;
+}
+
+.modalyangi {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 450px;
+  left: 100%;
+  transform: translate(-100%);
+  position: fixed;
+  right: 0 auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-iconn {
+  cursor: pointer;
+  display: none;
+  /* Hide menu icon by default */
+}
+
+/* Sidebar styles */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 270px;
+  background-color: #ffffff1e;
+  color: #fff;
+  backdrop-filter: blur(100px);
+  padding-top: 60px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-500px);
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.barr {
+  background-color: #000000;
+  width: 20px;
+  height: 3px;
+  margin-top: 4px;
+}
+
+.nonebutton {
+  display: none;
+}
+
+.Okomandicontainer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.Okomandicontainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Okomandicontainer1_box1 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Okomandicontainer1_box2 img {
+  width: 400px;
+}
+
+.Okomandicontainer2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.ish_chiqarishcontaniner {
+  width: 1000px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.yutube_vidio {
+  width: 100%;
+  height: 562px;
+  border-radius: 30px;
+}
+
+.ishcontainer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.ishcontainer_box1 {
+  margin-top: 3%;
+}
+
+.ishcontainer_box1_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  padding-top: 20px;
+}
+
+.jkdjs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.otganyillar {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.otganyillar img {
+  width: 100%;
+}
+
+.mmarginadd {
+  position: relative;
+  right: -290px;
+  width: 14px;
+  padding: 3px 9px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.yangilikcontainer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.novosti {
+  margin: 40px 0;
+}
+
+.inputysngilik {
+  width: 220px;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.posetinrelative {
+  position: relative;
+  right: 30px;
+  top: 2px;
+}
+
+.qoshishbuttonyan {
+  background-color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yangilikcardcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.yangilikcart {
+  width: 400px;
+  height: 150px;
+  border-top: 1px solid grey;
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.yangilikcart button {
+  width: 170px;
+  font-size: 15px;
+  padding: 5px 0;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.basketcontainer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.theas th {
+  width: 10%;
+  border-bottom: 1px solid rgb(207, 202, 202);
+  padding: 30px 0;
+}
+
+.backetcontainerbox_1 {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.backetcontainerbox_1 div {
+  width: 300px;
+}
+
+.zakas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itogobasket {
+  width: 320px;
+  background-color: #10BB87;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bsoflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zakascontainer {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zakascontainer .zakascontainer_1 {
+  width: 320px;
+  padding: 10px 0 40px 0;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.zakascontainer_2 {
+  width: 320px;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.zakascontainer_box2 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zakascontainer_box2 .birinchirang1 {
+  width: 100%;
+  padding: 20px;
+  background-color: #10BB87;
+  border-radius: 20px;
+}
+
+.zakascontainer_box2 .birinchirang2 {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFA630;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 1500px) {
+  .section_1_katalog {
+    width: 1000px !important;
+    position: relative;
+    left: 0%;
+    margin: 0 auto;
+    gap: 3%;
+    padding: 10px;
+  }
+
+  .section_1_katalog .section1katalog_box1 {
+    width: 500px !important;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section_1_katalog .section1katalog_box1 h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .katalogbtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 140px;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .section1katalog_box2 img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .nav-list {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-list {
+    display: none !important;
+  }
+
+  .minibars {
+    font-size: 20px;
+    padding: 6px 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 2px 3px 10px 1px rgba(128, 128, 128, 0.576);
+  }
+
+  .navbarsearch {
+    display: flex;
+    position: absolute;
+    right: 8%;
+    align-items: center;
+    gap: 25px;
+  }
+
+
+  .section1home img {
+    width: 300px;
+  }
+
+  .section2home {
+    width: 800px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bcvv {
+    top: 2px !important;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  .section1home {
+    width: 800px;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 30px 0;
+    border-bottom: 1px solid #33333377;
+  }
+
+  .section1home .section1home_box1 {
+    width: 400px;
+  }
+
+  .section1home img {
+    width: 300px;
+  }
+
+  .section2home {
+    width: 800px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section4home {
+    width: 800px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .section4flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap !important;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+
+  .section4flex div p {
+    height: 65px;
+    margin: 10px 0 5px 0;
+    color: #B3B3B3;
+  }
+
+  .section5home {
+    width: 800px;
+    margin-top: 5%;
+  }
+
+  .importrasimlar1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+
+  .section7home {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .section7flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 9%;
+  }
+
+  .section7flex div {
+    width: 45%;
+    border-top: 1px solid #33333350;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section1foter {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .section1foterflex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .section1foterflex .flexfoter {
+    width: 370px;
+    font-size: 15px !important;
+  }
+
+  .section1foterflex .flexfoter .section1fotericon h3 {
+    align-items: center;
+  }
+
+  .section2foter {
+    width: 800px;
+    height: 260px;
+  }
+
+  .section2foter .section2foterinput {
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  .section2foter .section2foterinput h1 {
+    margin: 0 0 20px 0;
+  }
+
+  .section2foter .section2foterinput input {
+    padding: 10px 20px;
+    width: 100% !important;
+    margin-top: 1px;
+  }
+
+  .foterflexbutn {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .sectionnnn5btn {
+    position: relative;
+    left: -70px;
+  }
+
+  .slidercarusel {
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #33333349;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-next::before {
+    font-size: 30px !important;
+  }
+
+  .cardinfo1 {
+    width: 450px;
+    height: 648px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cardinfodagi2img {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .cardinfodagi1img img {
+    width: 448px;
+    height: 448px;
+    border-radius: 10px
+  }
+
+  .cardinfodagi2img img {
+    width: 192px;
+    height: 192px;
+    border-radius: 10px
+  }
+
+  .cardinfocontainer {
+    width: 800px !important;
+  }
+
+  .cardinfocontainer .cardinofo011 {
+    width: 300px !important;
+  }
+
+  .product {
+    width: 800px !important;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .prosuct800px {
+    width: 84% !important;
+  }
+
+  .pruduct800pxfilter {
+    width: 780px !important;
+  }
+
+  .katalogbtn {
+    width: 165px !important;
+  }
+
+  .katalogkontainer {
+    width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .section_1_katalog {
+    width: 800px !important;
+    position: relative;
+    left: 0%;
+    margin: 0 auto;
+    gap: 3%;
+    padding: 10px;
+  }
+
+  .uslugicontainer {
+    width: 800px;
+    margin-top: 2%;
+    gap: 20px;
+  }
+
+  .kattaflexuslugi {
+    width: 800px;
+    gap: 20px;
+  }
+
+  .uslugiflex {
+    width: 580px;
+    height: 195px;
+    gap: 10px;
+  }
+
+  .uslugiflex img {
+    width: 400px;
+  }
+
+  .uslugiflex2 {
+    width: 580px;
+    height: 200px;
+    left: 27%;
+    gap: 10px;
+  }
+
+  .uslugiflex2 img {
+    width: 400px;
+  }
+
+  .Okomandicontainer {
+    width: 800px;
+  }
+
+  .Okomandicontainer1 {
+    gap: 20px;
+  }
+
+  .Okomandicontainer1_box1 {
+    gap: 3px;
+  }
+
+  .Okomandicontainer1_box2 img {
+    width: 350px;
+  }
+
+  .Okomandicontainer2 {
+    margin-top: 3%;
+  }
+
+  .ish_chiqarishcontaniner {
+    width: 800px;
+    padding-top: 30px;
+  }
+
+  .yutube_vidio {
+    height: 400px;
+  }
+
+  .ishcontainer {
+    width: 800px;
+  }
+
+  .otganyillar {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .otganyillar img {
+    width: 100%;
+  }
+
+  .yangilikcontainer {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .yangilikcart {
+    width: 324px;
+    height: 170px;
+  }
+
+  .basketcontainer {
+    width: 700px;
+  }
+
+  .backetcontainerbox_1 {
+    width: 700px;
+    margin: 30px 0;
+  }
+
+  .btnbaskettop {
+    margin-top: 20px !important;
+    width: 250px !important;
+    margin-left: 0px !important;
+  }
+
+  .slidercarusel {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #33333349;
+  }
+}
+
+
+@media (max-width: 840px) {
+  .section1home {
+    width: 500px;
+    gap: 0px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: start;
+    margin-top: 0px;
+    padding: 30px 0;
+    border-bottom: 1px solid #33333377;
+  }
+
+  .section1home .section1home_box1 {
+    width: 500px;
+  }
+
+  .section1home img {
+    width: 400px;
+  }
+
+  .section2home {
+    width: 500px;
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section4home {
+    width: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .section4flex {
+    display: flex;
+    gap: 20px;
+    margin-top: 1%;
+  }
+
+  .section5home {
+    width: 500px;
+    margin-top: 5%;
+  }
+
+  .importrasimlar1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+
+  .importrasimlar2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+
+  .section7home {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .section7flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-size: 15px !important;
+  }
+
+  .section7flex div {
+    width: 45%;
+    padding-top: 15px;
+    gap: 10px;
+  }
+
+  .section1foter {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .section1foterflex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .section1foterflex .flexfoter {
+    width: 100%;
+    font-size: 15px !important;
+  }
+
+  .section1foterflex .flexfoter .section1fotericon h3 {
+    align-items: center;
+  }
+
+  .section2foter {
+    width: 500px;
+    height: 380px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .section2foter .section2foterinput {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .section2foter .section2foterinput h1 {
+    margin: 0 0 20px 0;
+  }
+
+  .section2foter .section2foterinput input {
+    padding: 10px 20px;
+    width: 60% !important;
+    margin-top: 1px;
+  }
+
+  .foterflexbutn {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .sectionnnn5btn {
+    position: relative;
+    left: -70px;
+  }
+
+  .slidercarusel {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #33333349;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-next::before {
+    font-size: 30px !important;
+  }
+
+  .foterflexbutn2 {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .cardinfo1 {
+    width: 300px;
+    height: 448px;
+  }
+
+  .cardinfodagi2img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardinfodagi1img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cardinfodagi2img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .cardinfocontainer {
+    width: 600px !important;
+  }
+
+  .cardinfocontainer .cardinofo011 {
+    width: 300px !important;
+  }
+
+  .cardinfo2 {
+    width: 250px;
+    gap: 10px;
+  }
+
+  .caunter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .caunter button {
+    width: 150px;
+  }
+
+  .caunter div {
+    width: 130px;
+  }
+
+  .bacraunditogo0 {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .mn {
+    width: 100% !important;
+    justify-content: space-evenly;
+  }
+
+  .targetlen {
+    width: 320px !important;
+  }
+
+  .targetlen div {
+    font-size: 12px !important;
+    gap: 2px !important;
+  }
+
+  .product {
+    width: 500px !important;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .prosuct800px {
+    width: 450px !important;
+    margin-top: 3% !important;
+  }
+
+  .pruduct800pxfilter {
+    width: 500px !important;
+    gap: 1px;
+    margin-top: 10px !important;
+  }
+
+  .pruduct800pxfilter div {
+    gap: 10px !important;
+    align-items: center;
+  }
+
+  .pruduct800pxfilter div div {
+    font-size: 13px !important;
+    width: 60px !important;
+    height: 25px;
+    text-align: center;
+    padding: 8px 0 0 0 !important;
+    border-radius: 10px;
+  }
+
+  .pruduct800pxfilter button {
+    width: 150px !important;
+    font-size: 14.5px !important;
+  }
+
+  .katalogbtn {
+    width: 165px !important;
+  }
+
+  .katalogkontainer {
+    width: 500px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .section_1_katalog {
+    width: 500px !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .selectform {
+    width: 120px !important;
+    padding: 6px !important;
+    border-radius: 6px !important;
+    background-color: white;
+    font-size: 13px !important;
+  }
+
+  .section1katalog_box2 img {
+    width: 480px;
+    margin-top: 10px;
+  }
+
+  .uslugicontainer {
+    width: 500px;
+    gap: 10px;
+  }
+
+  .kattaflexuslugi {
+    width: 500px;
+    gap: 20px;
+  }
+
+  .uslugiflex {
+    width: 500px;
+    height: 150px;
+    left: 0%;
+    gap: 10px;
+    font-size: 12px !important;
+  }
+
+  .uslugiflex button {
+    width: 120px !important;
+    font-size: 12px !important;
+  }
+
+  .uslugiflex img {
+    width: 300px;
+  }
+
+  .uslugiflex2 {
+    width: 500px;
+    height: 150px;
+    left: 0%;
+    gap: 10px;
+    font-size: 12px !important;
+  }
+
+  .uslugiflex2 button {
+    width: 120px !important;
+    font-size: 12px !important;
+  }
+
+  .uslugiflex2 img {
+    width: 300px;
+  }
+
+  .Okomandicontainer {
+    width: 500px;
+  }
+
+  .Okomandicontainer1 {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .Okomandicontainer2 img {
+    width: 100px;
+  }
+
+  .Okomandicontainer1_box2 img {
+    width: 500px;
+  }
+
+  .ish_chiqarishcontaniner {
+    width: 500px;
+  }
+
+  .ishcontainer {
+    width: 500px;
+    font-size: 14px !important;
+  }
+
+  .ishcontainer_box1_div {
+    align-items: center;
+  }
+
+  .otganyillar {
+    width: 500px;
+  }
+
+  .yangilikcontainer {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .yangilikcart {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-iconn {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbarsearch {
+    display: none;
+  }
+
+  .navbaruse1 {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbarbutton {
+    font-size: 14px;
+  }
+
+  .saidbar1221 {
+    display: none;
+  }
+
+  .importrasimlar1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+
+  .importrasimlar2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 0px;
+
+  }
+
+  .aftarizatsiyaspan {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .aptarizatsiyacenter {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+
+  .inputaftarizatsiya {
+    width: 290px;
+    height: 40px;
+  }
+
+  #aftarizatsiyastyle {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .bvcx {
+    margin-left: 140px !important;
+  }
+
+  .zaplitparol {
+    width: 300px;
+    justify-content: space-between !important;
+  }
+
+  .zaplitparol div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bcds {
+    width: 130px !important;
+    margin: 0 auto;
+  }
+
+  .aftarizatsiyaspan {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .aptarizatsiyacenter {
+    width: 300px !important;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 15px !important;
+  }
+
+  .inputaftarizatsiya {
+    width: 130px;
+  }
+
+  .labelflex {
+    display: flex;
+  }
+
+  .labelflex label {
+    font-size: 15px !important;
+    gap: 1px;
+  }
+
+  .aftarizatsiyafle1 div input {
+    width: 135px !important;
+  }
+
+  .textarea {
+    width: 300px !important;
+  }
+
+  .textarea textarea {
+    width: 300px !important;
+  }
+
+  .ryiewi {
+    margin: 0 0 0 65px !important
+  }
+
+  .cardinfo2 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nonebutton {
+    display: block;
+  }
+
+  .dlfkasdkjf {
+    display: none;
+  }
+
+  .cardinfocontainer {
+    width: 400px !important;
+  }
+
+  .cardinfodagi2img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardinfodagi1img img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .cardinfodagi2img img {
+    width: 170px;
+    height: 150px;
+  }
+
+  .cardinfo1 {
+    width: 400px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .targetlen {
+    width: 400px !important;
+  }
+
+  .nonebutton {
+    border: none;
+    padding: 10px 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+  }
+
+  .section_1_katalog .section1katalog_box1 h1 {
+    font-size: 40px;
+    margin-bottom: 1px;
+  }
+
+  .product {
+    width: 400px !important;
+  }
+
+  .prosuct800px {
+    width: 350px !important;
+    margin-top: 3% !important;
+  }
+
+  .pruduct800pxfilter {
+    width: 400px !important;
+    gap: 1px;
+    margin-top: 10px !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .katalogkontainer {
+    width: 400px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    gap: 2px;
+  }
+
+  .section_1_katalog {
+    width: 400px !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section1katalog_box2 img {
+    width: 400px;
+    margin-top: 10px;
+  }
+
+  .modalyangi {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-content {
+    padding: 15px;
+    width: 300px;
+  }
+
+  .close {
+    width: 300px !important;
+    height: 42px;
+  }
+
+  .colla {
+    position: absolute;
+    right: 20px !important;
+  }
+
+  .basketcontainer {
+    width: 500px;
+  }
+
+  .backetcontainerbox_1 {
+    width: 500px;
+    margin: 30px 0;
+  }
+
+  .btnbaskettop {
+    margin-top: 20px !important;
+    width: 250px !important;
+    margin-left: 0px !important;
+  }
+
+  .theas {
+    font-size: 13px !important;
+  }
+
+  #incrementposetion {
+    left: 1px !important;
+  }
+
+  .zakas {
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tepawith100 {
+    width: 100%;
+  }
+
+  .fodbolkacenter {
+    width: 300px;
+    padding: 0 0 0 0;
+    font-size: 15px !important;
+  }
+
+  .fodbolkacenter h1 {
+    font-size: 15px;
+  }
+
+  .buttomhome {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 7px;
+  }
+
+  .section1home {
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 0px solid #33333377;
+    margin-top: 10px;
+    font-size: 15px !important;
+  }
+
+  .section1home h1 {
+    font-size: 22px;
+  }
+
+  .section1home .section1home_box1 {
+    width: 300px;
+  }
+
+  .section1home img {
+    width: 250px;
+  }
+
+  .section2home {
+    width: 320px;
+    gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section2home div {
+    width: 150px;
+    height: 190px;
+    gap: 6px;
+    font-size: 13px !important;
+  }
+
+  .section3home {
+    width: 100%;
+    margin: 0 auto;
+    margin: 10px 0;
+  }
+
+  .section3home img {
+    margin-left: 30%;
+  }
+
+  .section4home {
+    width: 320px;
+  }
+
+  .section4home h1 {
+    font-size: 26px;
+    margin-bottom: 10px !important;
+  }
+
+  .section4flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 1%;
+  }
+
+  .section4flex div {
+    width: 150px;
+    height: 250px !important;
+  }
+
+  .section4flex div button {
+    width: 90% !important;
+    gap: 7px;
+    padding: 7px 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .section5home {
+    width: 300px;
+    margin-top: 5%;
+  }
+
+  .importrasimlar1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+
+  .importrasimlar2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 0px;
+
+  }
+
+  .section7home {
+    width: 300px;
+  }
+
+  .section7home h1 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .section7flex {
+    flex-wrap: wrap;
+  }
+
+  .section7flex div {
+    width: 300px;
+    gap: 15px;
+  }
+
+  .section1foter {
+    width: 300px;
+    margin-top: 2%;
+  }
+
+  .section1foterflex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  .section1foterflex .flexfoter {
+    width: 100%;
+    font-size: 12.6px !important;
+  }
+
+  .section1foterflex .flexfoter .section1fotericon h3 {
+    align-items: center;
+  }
+
+  .section2foter {
+    width: 300px;
+    height: 380px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .section2foter .section2foterinput {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .section2foter .section2foterinput h1 {
+    margin: 0 0 20px 0;
+  }
+
+  .section2foter .section2foterinput input {
+    padding: 10px 20px;
+    width: 60% !important;
+    margin-top: 1px;
+  }
+
+  .foterflexbutn {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .sectionnnn5btn {
+    position: relative;
+    left: -130px;
+  }
+
+  .slidercarusel {
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #33333349;
+  }
+
+  .foterflexbutn2 {
+    position: relative;
+    bottom: 30px;
+  }
+
+  figure {
+    width: 152px !important;
+    height: 152px !important;
+  }
+
+  figure img {
+    border-radius: 30px;
+    width: 152px !important;
+    height: 152px !important;
+  }
+
+  .card_container {
+    width: 150px;
+    overflow: hidden !important;
+    padding: 0 0 0 7px;
+    height: 300px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card_container h3 {
+    width: 152px;
+    height: 42px;
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .btnshadovhome {
+    width: 140px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 5px 5px;
+  }
+
+  /* Modal oynani stilini belgilash */
+  .modal,
+  .modalll {
+    width: 100%;
+    height: 390px;
+    position: fixed;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.059);
+    z-index: 1;
+  }
+
+  .modall {
+    width: 100%;
+    height: 390px;
+    position: fixed;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .cardinfo1 {
+    width: 300px;
+    height: 448px;
+  }
+
+  .cardinfodagi2img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardinfodagi1img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cardinfodagi2img img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .cardinfocontainer {
+    width: 300px !important;
+  }
+
+  .cardinfocontainer .cardinofo011 {
+    width: 300px !important;
+  }
+
+  .cardinfo2 {
+    width: 250px;
+    gap: 10px;
+  }
+
+  .caunter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .caunter button {
+    width: 150px;
+  }
+
+  .caunter div {
+    width: 130px;
+  }
+
+  .bacraunditogo0 {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .mn {
+    width: 100% !important;
+    justify-content: space-evenly;
+  }
+
+  .targetlen {
+    width: 320px !important;
+  }
+
+  .uslugicontainer {
+    width: 300px;
+    gap: 10px;
+  }
+
+  .kattaflexuslugi {
+    width: 300px;
+    gap: 20px;
+  }
+
+  .uslugiflex {
+    width: 300px;
+    height: 290px;
+    left: 0%;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .uslugiflex2 {
+    width: 300px;
+    height: 290px;
+    left: 0%;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .Okomandicontainer {
+    width: 300px;
+  }
+
+  .Okomandicontainer1 .Okomandicontainer1_box1 {
+    width: 300px;
+    font-size: 14px !important;
+  }
+
+  .Okomandicontainer2 img {
+    width: 70px;
+  }
+
+  .Okomandicontainer1_box2 img {
+    width: 300px;
+  }
+
+  .ish_chiqarishcontaniner {
+    width: 300px;
+    font-size: 14px !important;
+  }
+
+  .ishcontainer {
+    width: 300px;
+    font-size: 14px !important;
+  }
+
+  .ishcontainer_box1_div {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .otganyillar {
+    width: 300px;
+  }
+
+  .yangilikcontainer {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .yangilikcart {
+    width: 100%;
+  }
+
+  .inputysngilik {
+    width: 170px;
+  }
+
+  .qoshishbuttonyan {
+    padding: 12px 5px;
+    border-radius: 10px;
+    font-size: 12px !important;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .basketcontainer {
+    width: 320px;
+  }
+
+  .backetcontainerbox_1 {
+    width: 320px;
+    margin: 10px 0;
+  }
+
+  .theas {
+    font-size: 10px !important;
+  }
+
+  #incrementposetion {
+    left: 1px !important;
+  }
+
+  .zakas {
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 0 !important;
+  }
+
+  .theas th {
+    padding: 10px 0;
+  }
+
+  .increment {
+    width: 100px !important;
+    border-radius: 6px;
+  }
+
+  .increment h3 {
+    background-color: white;
+    padding: 5px 6px !important;
+  }
+
+  .tdimgnameflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itogobasket {
+    width: 215px;
+    background-color: #10BB87;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slidercarusel {
+    width: 300px !important;
+    padding-bottom: 4%;
+    border-bottom: 1px solid #33333349;
+  }
+
+  figure {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  figure img {
+    border-radius: 20px;
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .card_container {
+    width: 140px;
+    overflow: hidden !important;
+    padding: 0 0 0 7px;
+    height: 300px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card_container h3 {
+    width: 152px;
+    height: 42px;
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .btnshadovhome {
+    width: 130px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 5px 5px;
+  }
+
+  .product {
+    width: 320px !important;
+  }
+
+  .prosuct800px {
+    width: 270px !important;
+  }
+
+  .pruduct800pxfilter {
+    width: 300px !important;
+  }
+
+  .pruduct800pxfilter div {
+    width: 300px;
+    gap: 6px !important;
+  }
+
+  .pruducts {
+    width: 300px !important;
+    margin: 0 auto;
+  }
+
+  .katalogkontainer {
+    width: 320px;
+    margin-top: 10px !important;
+  }
+
+  .section_1_katalog {
+    width: 290px !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section1katalog_box1 {
+    width: 300px !important;
+  }
+
+  .section1katalog_box2 img {
+    width: 300px;
+    margin-top: 10px;
+  }
+}
