@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
-import { ContextData } from "../context/Context";
+import { ContextData } from "../componentes/context/Context";
 import { Outlet } from "react-router-dom";
-import ProfileSidebar from "../components/ProfileSidebar";
+import ProfileSidebar from "../componentes/ProfilSaidbar";
 
 function Profile() {
     const {
@@ -14,7 +14,7 @@ function Profile() {
     }, [currentUser, navigate]);
 
     return (
-        <div className="profile container py-5 d-flex justify-content-between" style={{ gap: "150px" }}>
+        <div className="" style={{ gap: "150px" }}>
             <ProfileSidebar />
 
             <div className="w-75">

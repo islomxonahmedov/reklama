@@ -26,8 +26,10 @@ function Aftarizatsiya() {
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Password</h4>
-                        <div><input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="password" name='password' placeholder='• • • • • • • •' />
-                            <FiEye style={{ position: "relative", right: "30px" }} /></div>
+                        <div>
+                            <input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="password" name='password' placeholder='• • • • • • • •' />
+                            <FiEye style={{ position: "relative", right: "30px" }} />
+                        </div>
                         <p className='red'>{errorState?.password}</p>
                     </div>
                 </div>

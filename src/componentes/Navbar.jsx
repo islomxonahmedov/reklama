@@ -98,7 +98,7 @@ const Navbar = () => {
           <div style={{ cursor: "pointer" }} onClick={searchh}  ><FiSearch className='minibars bcvv' style={{ position: "relative", top: "8px" }} /></div>
           {
             Object.keys(currentUser).length > 0 ?
-              <NavLink to={"profil_status"}> <div className='navbaruse1' style={{ fontSize: "20px", color: "black", padding: "3px 5px" }}><FiUser /></div> </NavLink>
+              <NavLink to={"profil"}> <div className='navbaruse1' style={{ fontSize: "20px", color: "black", padding: "3px 5px" }}><FiUser /></div> </NavLink>
               :
               <>
                 <Link to={"aftarizatsiya"}><div className='navbaruse1' style={{ fontSize: "20px", color: "black", padding: "4px 7px" }}><IoIosLogIn style={{ position: "relative", top: "3px" }} /></div></Link>

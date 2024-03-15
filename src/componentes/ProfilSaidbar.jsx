@@ -43,19 +43,19 @@ function ProfileSidebar() {
         <ul className="profilsaidbar" style={styles}>
             <div className="profilsaidbarflex">
                 <li>
-                    <Link to={"status"}>Профиль</Link>
+                    <Link to={"profilall"}>Профиль</Link>
                 </li>
                 <li>
-                    <Link to={"add"}>Сотрудники</Link>
+                    <Link to={"ish"}>Вакансии</Link>
                 </li>
                 <li>
-                    <Link to={"likes"}>Заказы</Link>
+                    <Link to={"addpruduct"}>Добавить продукт</Link>
                 </li>
                 <li>
-                    <Link>Предложения </Link>
+                    <Link to={"log"}>Выгрузка</Link>
                 </li>
                 <li>
-                    <div style={{color:"red"}} onClick={logout} className="">Выход</div>
+                    <div style={{ color: "red" }} onClick={logout} className="">Выход</div>
                 </li>
             </div>
         </ul>

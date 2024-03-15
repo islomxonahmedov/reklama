@@ -21,6 +21,9 @@ import Yangiliklar from "./componentes/Yangiliklar";
 import Zakas from "./componentes/pagesany/Zakas";
 import Zakasta from "./componentes/pagesany/Zakasta";
 import Add from "./componentes/Add";
+import Profilall from "./componentes/pagesany/Profilall";
+import Profile from "./componentes/Profile";
+import Log from "./componentes/pagesany/Log";
 
 
 function App() {
@@ -50,6 +53,12 @@ function App() {
           <Route path="zakas" element={<Zakas />} />
           <Route path="zakasta" element={<Zakasta />} />
           <Route path="add" element={<Add />} />
+          <Route path="profil" element={<Profile />} >
+            <Route path="profilall" element={<Profilall />} />
+            <Route path="log" element={<Log />} />
+            <Route path="addpruduct" element={<Add />} />
+            <Route path="ish" element={<Ish />} />
+          </Route>
         </Routes>
         <Foter />
       </Context>

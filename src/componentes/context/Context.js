@@ -24,8 +24,6 @@ function ContextFunction({ children }) {
     // Dasturdagi foydalanuvchilar ro'yxati
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || []);
 
-    console.log(user);
-
     // Ro'yxatdan o'tgan foydalanuvchi ma'lumoti
     const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("currentUser")) || {});
 
@@ -103,7 +101,7 @@ function ContextFunction({ children }) {
         description: "",
         price: "",
         discount: "",
-        shutik:"",
+        shutik: "",
         status: true,
         count: 1,
         category: "",
@@ -121,7 +119,7 @@ function ContextFunction({ children }) {
             description: "",
             price: "",
             diskaunt: "",
-            shutik:"",
+            shutik: "",
             status: true,
             count: 1,
             category: "",
@@ -138,8 +136,6 @@ function ContextFunction({ children }) {
             })
             .catch(err => console.log(err.response.data))
     }
-
-    console.log(loading);
 
     useEffect(() => {
         getData();
@@ -303,13 +299,6 @@ function ContextFunction({ children }) {
         }
         else if (element.password.length < 8) {
             error = { ...error, password: "Password must not be less then 8 characters!" };
-        }
-
-        if (!element.telefon) {
-            error = { ...error, telefon: "Телефон не найден" };
-        }
-        else if (element.telefon.length < 9) {
-            error = { ...error, telefon: "Число не должно быть меньше 9." };
         }
         return error
     };
