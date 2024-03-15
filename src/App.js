@@ -19,6 +19,8 @@ import Bosibotganyillar from "./componentes/pagesany/Bosibotganyillar";
 import Tezhavola from "./componentes/pagesany/Tezhavola";
 import Yangiliklar from "./componentes/Yangiliklar";
 import Zakas from "./componentes/pagesany/Zakas";
+import Zakasta from "./componentes/pagesany/Zakasta";
+import Add from "./componentes/Add";
 
 
 function App() {
@@ -46,6 +48,8 @@ function App() {
           <Route path="havola" element={<Tezhavola />} />
           <Route path="yangilik" element={<Yangiliklar />} />
           <Route path="zakas" element={<Zakas />} />
+          <Route path="zakasta" element={<Zakasta />} />
+          <Route path="add" element={<Add />} />
         </Routes>
         <Foter />
       </Context>

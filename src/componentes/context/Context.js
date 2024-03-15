@@ -24,6 +24,8 @@ function ContextFunction({ children }) {
     // Dasturdagi foydalanuvchilar ro'yxati
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || []);
 
+    console.log(user);
+
     // Ro'yxatdan o'tgan foydalanuvchi ma'lumoti
     const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("currentUser")) || {});
 
@@ -96,11 +98,12 @@ function ContextFunction({ children }) {
     // Input-lardan olingan barcha ma'lumotlar
     const [newProduct, setNewProduct] = useState({
         id: "",
-        title: "",
+        name: "",
         img: "",
         description: "",
         price: "",
         discount: "",
+        shutik:"",
         status: true,
         count: 1,
         category: "",
@@ -113,11 +116,12 @@ function ContextFunction({ children }) {
     function handleClear() {
         setNewProduct({
             id: "",
-            title: "",
+            name: "",
             img: "",
             description: "",
             price: "",
-            discount: "",
+            diskaunt: "",
+            shutik:"",
             status: true,
             count: 1,
             category: "",
@@ -266,7 +270,7 @@ function ContextFunction({ children }) {
                 .catch(error => console.log(error))
         }
         handleClear();
-        navigate("product");
+        navigate("katalog");
     };
 
     // Tahrirlash funksiyasi
@@ -301,6 +305,12 @@ function ContextFunction({ children }) {
             error = { ...error, password: "Password must not be less then 8 characters!" };
         }
 
+        if (!element.telefon) {
+            error = { ...error, telefon: "Телефон не найден" };
+        }
+        else if (element.telefon.length < 9) {
+            error = { ...error, telefon: "Число не должно быть меньше 9." };
+        }
         return error
     };
 
@@ -333,18 +343,17 @@ function ContextFunction({ children }) {
         const errorMessage = validate(newUser);
         setErrorState(errorMessage);
         if (Object.keys(errorMessage).length === 0) {
-            const foundUser = user.filter(element => element.username === newUser.username && element.password === newUser.password);
-            if (foundUser.length > 0) {
-                localStorage.setItem("currentUser", JSON.stringify(foundUser[0]));
-                navigate("/")
+            const foundUser = user.find(element => element.username === newUser.username && element.password === newUser.password);
+            if (foundUser) {
+                localStorage.setItem("currentUser", JSON.stringify(foundUser));
                 getCurrentUser();
                 handleLoginModal();
                 Toast.fire({
                     icon: "success",
                     title: "Logged in successfully"
                 });
-            }
-            else {
+                navigate("/");
+            } else {
                 Toast.fire({
                     icon: "warning",
                     title: "Username or Password incorrect"
@@ -358,22 +367,21 @@ function ContextFunction({ children }) {
         const errorMessage = validate(newUser);
         setErrorState(errorMessage);
         if (Object.keys(errorMessage).length === 0) {
-            const foundUser = user.filter(element => element.username === newUser.username && element.password === newUser.password);
-            if (foundUser.length === 0) {
+            const foundUser = user.find(element => element.username === newUser.username);
+            if (!foundUser) {
                 const generalUser = { ...newUser, id: getUID() };
                 localStorage.setItem("currentUser", JSON.stringify(generalUser));
                 localStorage.setItem("user", JSON.stringify([...user, generalUser]));
                 getCurrentUser();
                 getUser();
                 clear();
-                navigate("/")
                 handleLoginModal();
                 Toast.fire({
                     icon: "success",
                     title: "Регистрация прошла успешно"
                 });
-            }
-            else {
+                navigate("/");
+            } else {
                 Toast.fire({
                     icon: "warning",
                     title: "Пользователь уже зарегистрирован"

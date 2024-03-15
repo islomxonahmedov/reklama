@@ -1,16 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { ContextData } from '../context/Context';
 import { FaArrowRight } from "react-icons/fa6";
 import { FiEye } from "react-icons/fi";
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Aftarizatsiya() {
     const {
         errorState,
         handleLogin,
-        handleRegister,
         getUserValue,
     } = useContext(ContextData);
+
     return (
         <div className='aftarizatsiyaspan'>
             <div>
@@ -21,22 +21,20 @@ function Aftarizatsiya() {
                 <div id='aftarizatsiyastyle' style={{ display: "flex", marginTop: "8%", justifyContent: "space-between" }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Логин</h4>
-                        {/* Электро́нная по́чта */}
-                        <input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='username' placeholder='ex@mail.com' />
+                        <input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='username' placeholder='ex@mail.com' id="recipient-username" />
                         <p style={{ color: "red" }}>{errorState?.username}</p>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Password</h4>
-                        <div><input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='password' placeholder='• • • • • • • •' /><FiEye style={{ position: "relative", right: "30px" }} /></div>
-                        <p style={{ color: "red" }}>{errorState?.password}</p>
+                        <div><input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="password" name='password' placeholder='• • • • • • • •' />
+                            <FiEye style={{ position: "relative", right: "30px" }} /></div>
+                        <p className='red'>{errorState?.password}</p>
                     </div>
                 </div>
                 <div className='zaplitparol' style={{ display: "flex", justifyContent: "space-between", marginTop: "30px" }}>
                     <div style={{ display: "flex", gap: "20px" }}>
-                        <button className='btnshadovhome' style={{ width: "80px" }} onClick={handleLogin} type="button">Войти</button>
-                        <Link to={"/registratsiya"}><button className='btnshadovhome bcds' style={{ width: "120px" }}
-                            // onClick={handleRegister}
-                            type="button">Регистрация</button></Link>
+                        <button className='btnshadovhome' style={{ width: "80px" }} onClick={handleLogin} type="submit">Войти</button>
+                        <Link to={"/registratsiya"}><button className='btnshadovhome bcds' style={{ width: "120px" }} type="button">Регистрация</button></Link>
                     </div>
                     <div style={{ marginTop: "10px", textDecoration: "underline", color: "#10BB87", cursor: "pointer" }}>Забыли пароль?</div>
                 </div>
@@ -45,4 +43,4 @@ function Aftarizatsiya() {
     )
 }
 
-export default Aftarizatsiya
+export default Aftarizatsiya;

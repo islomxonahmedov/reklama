@@ -128,7 +128,7 @@ const Navbar = () => {
               <NavLink><div className='navlinkpagrtowo'><NavLink>Контакты</NavLink></div></NavLink>
               <NavLink><div className='navlinkpagrtowo'><NavLink>Вакансии</NavLink></div></NavLink>
               <NavLink><div className='navlinkpagrtowo'><NavLink>Производство</NavLink></div></NavLink>
-              <NavLink><div className='navlinkpagrtowo'><NavLink>Диллерам</NavLink></div></NavLink>
+              <NavLink to={"add"}><div className='navlinkpagrtowo'><NavLink to={"add"}>Продукт +</NavLink></div></NavLink>
             </div>
           </div>
         </div>

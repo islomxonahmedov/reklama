@@ -40,19 +40,24 @@ function ProfileSidebar() {
     };
 
     return (
-        <ul className="profileSidebar w-25 d-flex flex-column gap-3 fs-5" style={styles}>
-            <li>
-                <Link to={"status"}> Profile Status</Link>
-            </li>
-            <li>
-                <Link to={"add"}>Add new Product</Link>
-            </li>
-            <li>
-                <Link to={"likes"}>Favorites</Link>
-            </li>
-            <li>
-                <button onClick={logout} className="d-flex align-items-center justify-content-center gap-2 fs-5 btn btn-outline-danger mt-4">Logout</button>
-            </li>
+        <ul className="profilsaidbar" style={styles}>
+            <div className="profilsaidbarflex">
+                <li>
+                    <Link to={"status"}>Профиль</Link>
+                </li>
+                <li>
+                    <Link to={"add"}>Сотрудники</Link>
+                </li>
+                <li>
+                    <Link to={"likes"}>Заказы</Link>
+                </li>
+                <li>
+                    <Link>Предложения </Link>
+                </li>
+                <li>
+                    <div style={{color:"red"}} onClick={logout} className="">Выход</div>
+                </li>
+            </div>
         </ul>
     )
 }

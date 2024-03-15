@@ -27,13 +27,11 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Общество</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100px" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='ОАО' />
-                        <p style={{ color: "red" }}>{errorState?.Общество}</p>
+                        <input style={{ width: "100px" }} className='inputaftarizatsiya' type="text" name='next' placeholder='ОАО' />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Название</h4>
-                        <input style={{ width: "330px" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='innane' placeholder='Строй групп' />
-                        <p style={{ color: "red" }}>{errorState?.Название}</p>
+                        <input style={{ width: "330px" }} className='inputaftarizatsiya' type="text" name='innane' placeholder='Строй групп' />
                     </div>
                 </div>
 
@@ -42,13 +40,11 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>ИНН</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "220px" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='0000000000' />
-                        <p style={{ color: "red" }}>{errorState?.username}</p>
+                        <input style={{ width: "220px" }} className='inputaftarizatsiya' type="text" name='next' placeholder='0000000000' />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>КПП</h4>
-                        <div><input style={{ width: "220px" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='innane' placeholder='0000000000' /></div>
-                        <p style={{ color: "red" }}>{errorState?.password}</p>
+                        <div><input style={{ width: "220px" }} className='inputaftarizatsiya' type="text" name='innane' placeholder='0000000000' /></div>
                     </div>
                 </div>
 
@@ -57,7 +53,7 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Р/С</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='0000000000' />
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="text" name='next' placeholder='0000000000' />
                     </div>
                 </div>
 
@@ -66,7 +62,7 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Компания занимается</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='Производство пиломатериалов' />
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="text" name='next' placeholder='Производство пиломатериалов' />
                     </div>
                 </div>
 
@@ -75,7 +71,7 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Адрес</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='Москва, ул. Пушкина д. 32 корп. 3' />
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="text" name='next' placeholder='Москва, ул. Пушкина д. 32 корп. 3' />
                     </div>
                 </div>
 
@@ -84,7 +80,7 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4 style={{ display: "flex" }}>Сайт компании <h4 style={{ color: "#B3B3B3", marginLeft: "10px" }}>(не обязательно)</h4></h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='site.ru' />
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="text" name='next' placeholder='site.ru' />
                     </div>
                 </div>
 
@@ -93,11 +89,11 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Телефон</h4>
                         {/* Электро́нная по́чта */}
-                        <input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='username' placeholder='+998 77 095 00 25' />
+                        <input className='inputaftarizatsiya' type="tel" name='telefon' placeholder='+998 77 095 00 25' />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Почта</h4>
-                        <div><input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='password' placeholder='ex@mail.com' /></div>
+                        <div><input className='inputaftarizatsiya' type="text" name='password' placeholder='ex@mail.com' /></div>
                     </div>
                 </div>
 
@@ -106,15 +102,14 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4 style={{ display: "flex" }}>Пароль учетной записи</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="password" name='password' placeholder='• • • • • • • • • ' />
-                        <p style={{ color: "red" }}>{errorState?.password}</p>
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="password" name='password' placeholder='• • • • • • • • • ' />
                     </div>
                 </div>
                 <div style={{ marginTop: "2%", }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4 style={{ display: "flex" }}>ФИО контактного лица</h4>
                         {/* Электро́нная по́чта */}
-                        <input style={{ width: "100%" }} className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="text" name='next' placeholder='Иванов Иван Иванович' />
+                        <input style={{ width: "100%" }} className='inputaftarizatsiya' type="text" name='next' placeholder='Иванов Иван Иванович' />
                     </div>
                 </div>
 
@@ -123,12 +118,11 @@ function Registaratsiya() {
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Телефон</h4>
                         {/* Электро́нная по́чта */}
-                        <input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="password" name='password' placeholder='+998 77 095 00 25' />
+                        <input className='inputaftarizatsiya' type="password" name='password' placeholder='+998 77 095 00 25' />
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                         <h4>Почта</h4>
-                        <div><input className='inputaftarizatsiya' onInput={(e) => getUserValue(e)} type="email" name='username' placeholder='ex@mail.com' /></div>
-                        <p style={{ color: "red" }}>{errorState?.username}</p>
+                        <div><input className='inputaftarizatsiya' type="email" name='username' placeholder='ex@mail.com' /></div>
                     </div>
                 </div>
                 <div style={{ display: "flex", marginTop: "2%", justifyContent: "space-between", paddingBottom: "20px" }}>
